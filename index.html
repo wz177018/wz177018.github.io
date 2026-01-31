@@ -1,8 +1,99 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta http-equiv="refresh" content="0; URL=https://lite.tiktok.com/t/ZSHKVwLNYA1Q3-UHyAF/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リンクカード</title>
+
+  <!-- 4秒後にTikTokへ -->
+  <meta http-equiv="refresh" content="4; URL=https://lite.tiktok.com/t/ZS91QDdXnq15A-hwaV4/">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .card {
+      background: #fff;
+      width: 320px;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+      overflow: hidden;
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .image {
+      width: 100%;
+      height: 220px;
+      background: url('photo.jpg') center/cover no-repeat;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 18px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: block;
+      background: linear-gradient(135deg, #ff2d55, #ff6a88);
+      color: white;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 50px;
+      font-size: 16px;
+      box-shadow: 0 6px 18px rgba(255,45,85,0.35);
+      transition: transform 0.15s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+
+    .countdown {
+      font-size: 12px;
+      color: #999;
+      margin-top: 12px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
+
 <body>
+  <div class="card">
+    <div class="image"></div>
+
+    <div class="content">
+      <div class="title">動画はこちら 💖</div>
+      <div class="desc">下のボタンをタップすると再生できます</div>
+
+      <a class="btn" href="https://lite.tiktok.com/t/ZS91QDdXnq15A-hwaV4/" target="_blank">
+        ♡タップで再生してね)
+      </a>
+
+      <div class="countdown">4秒後に自動でTikTokへ移動します…</div>
+    </div>
+  </div>
 </body>
 </html>
